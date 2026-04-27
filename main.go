@@ -10,8 +10,8 @@ import (
 
 func main() {
 	if len(os.Args) < 3 {
-		fmt.Fprintln(os.Stderr, "Usage: env-to-envchain <namespace> <envfile>")
-		fmt.Fprintln(os.Stderr, "  Example: env-to-envchain myapp .env")
+		fmt.Fprintln(os.Stderr, "Usage: dotenv-to-envchain <namespace> <envfile>")
+		fmt.Fprintln(os.Stderr, "  Example: dotenv-to-envchain myapp .env")
 		os.Exit(1)
 	}
 

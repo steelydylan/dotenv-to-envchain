@@ -1,4 +1,4 @@
-# env-to-envchain
+# dotenv-to-envchain
 
 `.env` ファイルの内容を [envchain](https://github.com/sorah/envchain) に namespace 付きで保存する CLI ツールです。
 
@@ -14,20 +14,20 @@ brew install envchain
 ## インストール
 
 ```bash
-go install github.com/steelydylan/env-to-envchain@latest
+go install github.com/steelydylan/dotenv-to-envchain@latest
 ```
 
 ## 使い方
 
 ```bash
-env-to-envchain <namespace> <envfile>
+dotenv-to-envchain <namespace> <envfile>
 ```
 
 ### 例
 
 ```bash
 # .env の内容を "myapp" namespace に保存
-env-to-envchain myapp .env
+dotenv-to-envchain myapp .env
 
 # 保存した変数を確認
 envchain myapp env
